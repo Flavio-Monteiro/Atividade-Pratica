@@ -1,0 +1,460 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*FONTS*/
+    --font-primary: "Chakra Petch", sans-serif;
+    --font-secundary: "Open Sans", sans-serif;
+
+    /*CORES PRINCIPAIS*/
+    --bg-color-primary: #01080E;
+    --btn-color-primary: #2BFDBE;
+    --text-color-primary: #D7F9FF;
+    --text-color-secundary: #2BDEFD;
+    --label: #2A7AE4;
+
+    /* CORES VARIANTES */
+    --color-success: #00C86F;
+    --color-info: #1EA0B7;
+    --color-secondary: #9CD33B;
+    --color-danger: #F16165;
+    --color-accent: #DC6EBE;
+    --color-warning: #FFBA05;
+    --color-alert: #FF8C2A;
+    --color-critical: #E31A5A;
+    --bg-color-cards: #021017;
+}
+
+/*ESTILOS HTML*/
+html {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--bg-color-cards);
+    color: var(--text-color-primary);
+    font-family: var(--font-primary);
+    background: #000000;
+}
+
+/*ESTILOS BODY*/
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+/*--------------------------- ESTILOS HEADER-CONTAINER ------------------------*/
+.header-container {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: var(--bg-color-primary);
+
+}
+
+/*-------------------------- ESTILOS NAV-CONTAINER ------------------------------*/
+.nav-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/*----------------------- ESTILO NOME PORTIFOLIO TXT------------------------------*/
+.portifolio-txt {
+    color: #00C86F;
+}
+
+/*------------------- ----ESTILOS NAV-CONTAINER  > div-containe-links -------------*/
+.div-containe-links {
+    height: 100%;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+/*----------------------  ESTILOS NAV-CONTAINER  > div-containe-links > a ---------*/
+.div-containe-links a {
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--font-primary);
+    font-size: 1em;
+    color: var(--text-color-primary);
+
+}
+
+/*-------------------------- ESTILOS section-home -----------------------------*/
+.section-home {
+    width: 100%;
+    max-width: 1472px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-image: url('../images/background/bg-universe.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+}
+
+/* ------  Ajustando os estilos para .infor-home-developer e .img-astrounaut ------*/
+.infor-home-developer,
+.img-astrounaut {
+    width: 90%;
+    max-width: 500px;
+    height: 700px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.infor-home-developer {
+    text-align: center;
+}
+
+.infor-home-developer>h1 {
+    font-size: 3em;
+}
+
+/*----------------------------- IMAGE DEVELOPER ------------------------------*/
+.image-developer {
+    width: 204px;
+    height: 204px;
+    border-radius: 100%;
+    border: 3px solid rgb(208, 208, 208);
+}
+
+/*---------------------------- IMAGE ASTRONAUT -------------------------------*/
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+        /* Ajuste a distância conforme necessário */
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.img-astrounaut {
+    background-image: url('../images/background/image04-Photoroom.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    object-fit: cover;
+    animation: moveUpDown 5s ease-in-out infinite;
+    /* Animação aplicada à imagem */
+}
+
+/*----------------------------- ICONES SOCIAIS ---------------------------------*/
+.container-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 70%;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.container-icons p {
+    color: #5300c8;
+    transition: 0.3s;
+    opacity: 0;
+    font-weight: bold;
+}
+
+.icones {
+    width: 32px;
+    filter: invert(93%) sepia(72%) saturate(6460%) hue-rotate(174deg) brightness(107%) contrast(105%);
+    transition: 0.2s ease-in;
+    transform: scale(0.9);
+}
+
+/*------------------------------ HOVERS EFFECTS ------------------------------------*/
+.container-github-icon:hover p {
+    opacity: 100%;
+    background: #53277C;
+    background: linear-gradient(to right, #53277C 0%, #7E268A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    opacity: 100;
+}
+
+.container-facebook-icon:hover p {
+    opacity: 100%;
+    background: #1d5bcf;
+    background: linear-gradient(to right, #2941de 0%, #4b67f1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    opacity: 100;
+}
+
+/*-------------------------- ESTILOS DOS ICONES BACKGROUND GRADIENTE--------------------------------*/
+.github-icon-svg:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: invert(36%) sepia(95%) saturate(1001%) hue-rotate(222deg) brightness(96%) contrast(96%);
+}
+
+.instagram-icon-svg:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: invert(34%) sepia(75%) saturate(5465%) hue-rotate(282deg) brightness(84%) contrast(136%);
+}
+
+.facebook-icon-svg:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: invert(29%) sepia(64%) saturate(2546%) hue-rotate(193deg) brightness(95%) contrast(105%);
+}
+
+.linkedin-icon-svg:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: invert(27%) sepia(94%) saturate(1522%) hue-rotate(194deg) brightness(87%) contrast(95%);
+}
+
+.whatsapp-icon-svg:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: invert(68%) sepia(97%) saturate(1676%) hue-rotate(69deg) brightness(87%) contrast(86%);
+}
+
+.yotube-icon-svg:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: invert(14%) sepia(74%) saturate(4112%) hue-rotate(351deg) brightness(105%) contrast(94%);
+}
+
+/*-------------------------------ORGANIZAR ESSE ESTILO--------------------------------*/
+.div-containe-links a::before,
+.div-containe-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-info);
+    transition: width 0.3s ease-out, left 0.3s ease-out;
+}
+
+.div-containe-links a {
+    transform: translateX(-50%);
+}
+
+.div-containe-links a::after {
+    transform: translateX(50%);
+}
+
+.div-containe-links a:hover::before,
+.nav-bar a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.div-containe-links a:hover {
+    color: var(--text-color-secundary);
+}
+
+/*SEÇÃO SOBRE MIM*/
+#container-sobre-min {
+    width: 1247px;
+    height: 100vh;
+    margin: auto;
+    padding: 10px;
+    overflow: auto;
+}
+#container-sobre-min img {
+    float: right;
+}
+#sobre-mim-title {
+    font-size: 1.4em;
+    margin: 20px 0;
+}
+hr {
+   border: 1px solid #085b357b;
+   margin-bottom: 1em;
+
+}
+#container-sobre-min p {
+    text-align: justify;
+    font-family: var(--font-secundary);
+    color: var(--color-info);
+}
+.content {
+    width: 1247px;
+    display: flex;
+}
+
+#academico-conteiner {
+    width: 100;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    flex-direction: column;
+    background: var(--text-color-primary);
+}
+span {
+    font-size: 1.2em;
+}
+.minha-educacao {
+    color: var(--bg-color-primary);
+}
+.container-faculdade {
+    width: 50%;
+    height: 200px;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    margin: 1em;
+}
+.container-faculdade h1 {
+    font-size: 1.3em;
+    font-family: var(--font-secundary);
+    font-weight: normal;
+    color: var(--bg-color-primary);
+}
+.container-faculdade p {
+    font-size: 1.2em;
+    font-family: var(--font-secundary);
+    font-weight: normal;
+    color: var(--bg-color-primary);
+
+}
+/*seção Projetos*/
+#projetos {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/background/image-desafio.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*container gradiente */
+.gradiente-conteiner {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(27, 27, 27, 0.564), rgba(0, 0, 0, 0.745) ,transparent);
+}
+.gradiente-conteiner h1 {
+    font-size: 2.4em;
+    padding: 10px;
+}
+.projetos-contents {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+/*seção conteudo projetos*/
+.projetos-images {
+    margin: 10px;
+    width: 450px;
+    height: 250px;
+
+    overflow: hidden;
+    box-shadow: 2px 3px 3px #0f0e0edf;
+}
+.projetos-images img {
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+ 
+}
+.projetos-images:hover img {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#contato {
+    width: 1240px;
+    margin: auto;
+    text-align: center;
+}
+#contato h1 {
+    font-size: 2em;
+    margin: 20px 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    text-align: left;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+legend {
+    padding: 0 0.5em;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+footer {
+    height: 80px;
+    background-color: var(--text-color-primary);
+    color: var(--bg-color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

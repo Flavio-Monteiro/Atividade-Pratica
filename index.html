@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Meta tags essenciais -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Flávio Monteiro</title>
+    
+    <!-- Fontes externas Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    <!-- Link para arquivos CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/mediaQuery.css">
+</head>
+<body>
+    <!-- Cabeçalho com navegação -->
+    <header class="header-container">
+        <nav class="nav-container">
+            <h3>Meu <span class="portifolio-txt">Portifólio</span></h3>
+            <div class="div-containe-links">
+                <a href="#container-sobre-min">Sobre</a>
+                <a href="#academico-conteiner">Acadêmico</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Seção inicial -->
+    <section class="section-home">
+        <div class="infor-home-developer">
+            <img src="assets/images/developer-img.png" class="image-developer" alt="">
+            <h1>&lt; Flávio Monteiro &gt;</h1>
+            <p>Front End Developer</p>
+            <div class="container-icons">
+                <!-- Ícones de redes sociais -->
+                <div class="container-github-icon">
+                    <img src="assets/images/icons/github-142-svgrepo-com.svg" class="icones github-icon-svg" alt="">
+                </div>
+                <div class="container-facebook-icon">
+                    <img src="assets/images/icons/facebook-svgrepo-com.svg" class="icones facebook-icon-svg" alt="">
+                </div>
+                <div class="container-instagram-icon">
+                    <img src="assets/images/icons/instagram-167-svgrepo-com.svg" class="icones instagram-icon-svg" alt="">
+                </div>
+                <div class="container-linkedin-icon">
+                    <img src="assets/images/icons/linkedin-svgrepo-com.svg" class="icones linkedin-icon-svg" alt="">
+                </div>
+                <div>
+                    <img src="assets/images/icons/whatsapp-svgrepo-com.svg" class="icones whatsapp-icon-svg" alt="">
+                </div>
+                <div>
+                    <img src="assets/images/icons/youtube-svgrepo-com.svg" class="icones yotube-icon-svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção sobre mim -->
+    <section id="container-sobre-min">
+        <h1><span class="sobre-mim-title">Sobre mim</span></h1>
+        <hr>
+        <img src="assets/images/background/image02-Photoroom.png" alt="">
+        <p>
+            Estudante apaixonado por tecnologia, escolhi essa área por estar em constante evolução.
+            A dinâmica e as rápidas inovações tecnológicas são o que me motiva diariamente,
+            sempre em busca de aprender algo novo e acompanhar as tendências emergentes.
+            Gosto de me desafiar com projetos complexos que exigem criatividade e pensamento crítico.
+            Acredito que a tecnologia tem o poder de transformar vidas e a sociedade,
+            e quero fazer parte desse movimento, contribuindo com soluções inovadoras.
+            A cada nova descoberta, minha paixão pela área se renova, reforçando meu compromisso com o aprendizado contínuo e a adaptação às mudanças. <br><br>
+            <cite>"Assim como o universo está em constante expansão, a tecnologia avança de maneira exponencial, revelando novas fronteiras e possibilidades infinitas."</cite>
+        </p>
+    </section>
+    
+    <!-- Seção de educação -->
+    <section id="academico-conteiner">
+        <h1><span class="minha-educacao">Minha Educação</span></h1>
+        <div class="content">
+            
+            <div class="container-faculdade">
+                <h1>Centro universitário</h1>
+                <p>UNINTER</p>
+                <p>Analise e Desenvolvimento de Sistemas - Cursando</p>
+            </div>
+            <div class="container-faculdade">
+                <h1>2001 Colégio e Cursos</h1>
+                <p>Ensino Médio</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção de projetos -->
+    <section id="projetos">
+        <div class="gradiente-conteiner">
+            <h1>Projetos</h1>
+            <div class="projetos-contents">
+                <div class="projetos-images">
+                    <img src="assets/images/background/play-filme.png" alt="">
+                </div>
+                <div class="projetos-images">
+                    <img src="assets/images/background/calculos.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção de contato -->
+    <section id="contato">
+        <h1>Contato</h1>
+        <!-- formulário -->
+        <form action="/submit-form" method="post">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Mensagem</legend>
+                <div class="form-group">
+                    <label for="message">Sua Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+            </fieldset>
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <p>Desenvolvido por Flávio Monteiro &copy;</p>
+    </footer>
+</body>
+</html>
