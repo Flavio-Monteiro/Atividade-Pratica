@@ -282,42 +282,38 @@ body {
 
 /*SEÇÃO SOBRE MIM*/
 #container-sobre-min {
-    width: 1247px;
+    width: 100%;
     height: 100vh;
-    margin: auto;
-    padding: 10px;
-    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-#container-sobre-min img {
+.sobre-mim-descricao {
+    width: 1200px;
+    padding: 20px;
+    text-align: justify;
+}
+.imagem-astronauta {
     float: right;
 }
-#sobre-mim-title {
-    font-size: 1.4em;
-    margin: 20px 0;
-}
-hr {
-   border: 1px solid #085b357b;
-   margin-bottom: 1em;
 
-}
-#container-sobre-min p {
-    text-align: justify;
-    font-family: var(--font-secundary);
-    color: var(--color-info);
-}
 .content {
     width: 1247px;
     display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 #academico-conteiner {
-    width: 100;
+    width: 100%;
     margin: auto;
     height: 100vh;
     display: flex;
     align-items: center;  
     justify-content: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+    
     background: var(--text-color-primary);
 }
 span {
@@ -327,10 +323,11 @@ span {
     color: var(--bg-color-primary);
 }
 .container-faculdade {
-    width: 50%;
+    width: 400px;
     height: 200px;
     padding: 10px;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #2A7AE4;
+    border-radius: 5px;
     margin: 1em;
 }
 .container-faculdade h1 {
@@ -346,53 +343,52 @@ span {
     color: var(--bg-color-primary);
 
 }
-/*seção Projetos*/
 #projetos {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url("../images/background/image-desafio.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-/*container gradiente */
-.gradiente-conteiner {
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to right, rgba(27, 27, 27, 0.564), rgba(0, 0, 0, 0.745) ,transparent);
-}
-.gradiente-conteiner h1 {
+#projetos h1 {
     font-size: 2.4em;
+}
+/* Imagens projetos */
+.contents-projetos {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100%;
+    border: 3px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* ou use justify-content: center; se preferir */
+    box-sizing: border-box;
     padding: 10px;
 }
-.projetos-contents {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-/*seção conteudo projetos*/
-.projetos-images {
-    margin: 10px;
-    width: 450px;
-    height: 250px;
 
-    overflow: hidden;
-    box-shadow: 2px 3px 3px #0f0e0edf;
-}
-.projetos-images img {
-    width: 100%;
-    height: 100%;
+.imagens-projetos {
+    height: 200px;
+    width: 350px;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 4px #0c0c0ce0;
     transition: 0.2s;
- 
+    transform: scale(0.9);
+    border: 2px solid #5300c8;
+
 }
-.projetos-images:hover img {
-    transform: scale(1.2);
+.imagens-projetos:hover {
+    transform: scale(1);
+    filter: blur(1px);
     cursor: pointer;
+    box-shadow: none;
 }
+/* seção contatos*/
 
 #contato {
     width: 1240px;
