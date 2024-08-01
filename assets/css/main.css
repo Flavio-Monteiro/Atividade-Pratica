@@ -290,18 +290,20 @@ body {
     flex-direction: column;
 }
 .sobre-mim-descricao {
-    width: 1200px;
+    max-width: 1200px;
     padding: 20px;
     text-align: justify;
+    overflow: auto;
 }
 .imagem-astronauta {
     float: right;
 }
 
 .content {
-    width: 1247px;
+    max-width: 1247px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -312,23 +314,29 @@ body {
     display: flex;
     align-items: center;  
     justify-content: center;
-    flex-wrap: wrap;
-    
-    background: var(--text-color-primary);
+    flex-direction: column;    
+    background: #fff;
 }
 span {
     font-size: 1.2em;
 }
 .minha-educacao {
     color: var(--bg-color-primary);
+    font-size: 1.4em;
+    
 }
 .container-faculdade {
     width: 400px;
     height: 200px;
     padding: 10px;
-    border-bottom: 1px solid #2A7AE4;
-    border-radius: 5px;
+    box-shadow: 2px 3px 4px #6262627b;
+    border: 1px solid #efefef;
     margin: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fefefe;
 }
 .container-faculdade h1 {
     font-size: 1.3em;
@@ -344,55 +352,73 @@ span {
 
 }
 #projetos {
-    width: 100%;
+    /* width: 100%;
     min-height: 100vh;
     background-image: url("../images/background/image-desafio.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    background: var(--bg-color-primary);
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
 }
 #projetos h1 {
     font-size: 2.4em;
+    color: var(--color-info);
 }
 /* Imagens projetos */
 .contents-projetos {
     width: 100%;
     max-width: 1200px;
     min-height: 100%;
-    border: 3px solid red;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; /* ou use justify-content: center; se preferir */
     box-sizing: border-box;
     padding: 10px;
 }
-
+.projetos-contents{
+    width: 300px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    overflow: hidden;
+    border: 1px solid #2BDEFD;
+    border-radius: 2px;
+}
+.projetos-contents:hover .imagens-projetos {
+    transform: scale(1.2);
+    filter: blur(1.4px);
+    cursor: pointer;
+}
 .imagens-projetos {
-    height: 200px;
-    width: 350px;
-    margin: 10px;
+    height: 100%;
+    max-width: 100%;
     box-sizing: border-box;
-    box-shadow: 3px 3px 4px #0c0c0ce0;
+    box-shadow: 3px 3px 4px #0d0d0de0;
     transition: 0.2s;
-    transform: scale(0.9);
-    border: 2px solid #5300c8;
 
 }
-.imagens-projetos:hover {
+/* .imagens-projetos:hover {
     transform: scale(1);
-    filter: blur(1px);
+    filter: blur(1.5px);
     cursor: pointer;
     box-shadow: none;
-}
+} */
 /* seção contatos*/
 
 #contato {
-    width: 1240px;
-    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
 }
 #contato h1 {
@@ -401,9 +427,8 @@ span {
 }
 form {
     display: flex;
+    width: 60%;
     flex-direction: column;
-    width: 50%;
-    margin: auto;
     text-align: left;
 }
 
