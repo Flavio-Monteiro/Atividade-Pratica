@@ -395,8 +395,8 @@ span {
     padding: 10px;
 }
 .projetos-contents{
-    padding: 5px;
-    width: 300px;
+ 
+    max-width: 450px;
     min-height: 200px;
     display: flex;
     flex-direction: column;
