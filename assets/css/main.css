@@ -327,8 +327,8 @@ span {
     
 }
 .container-faculdade {
-    width: 400px;
-    height: 200px;
+    max-width: 400px;
+    min-height: 200px;
     padding: 10px;
     box-shadow: 2px 3px 4px #6262627b;
     border: 1px solid #efefef;
@@ -377,7 +377,7 @@ span {
     min-height: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* ou use justify-content: center; se preferir */
+    justify-content: center; /* ou use justify-content: center; se preferir */
     box-sizing: border-box;
     padding: 10px;
 }
