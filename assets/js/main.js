@@ -1,9 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburgerMenu = document.getElementById('hamburger-menu');
-    const navLinks = document.querySelector('.div-containe-links');
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuHamburguer = document.querySelector('menu-hamburguer');
+        const navLinks = document.querySelector('.div-containe-links');
 
-    hamburgerMenu.addEventListener('click', function() {
-        this.classList.toggle('active');
-        navLinks.classList.toggle('active');
+        menuHamburguer.addEventListener('click', function() {
+            menuHamburguer.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
     });
-});

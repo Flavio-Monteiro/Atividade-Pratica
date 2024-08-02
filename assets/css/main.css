@@ -49,6 +49,7 @@ body {
 }
 
 /*--------------------------- ESTILOS HEADER-CONTAINER ------------------------*/
+/* Estilos gerais */
 .header-container {
     width: 100%;
     height: 80px;
@@ -58,10 +59,8 @@ body {
     margin: 0 auto;
     padding: 0 20px;
     background: var(--bg-color-primary);
-
 }
 
-/*-------------------------- ESTILOS NAV-CONTAINER ------------------------------*/
 .nav-container {
     width: 100%;
     max-width: 1200px;
@@ -70,32 +69,72 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
-/*----------------------- ESTILO NOME PORTIFOLIO TXT------------------------------*/
 .portifolio-txt {
     color: #00C86F;
 }
 
-/*------------------- ----ESTILOS NAV-CONTAINER  > div-containe-links -------------*/
 .div-containe-links {
     height: 100%;
     display: flex;
     width: 50%;
     align-items: center;
     justify-content: space-evenly;
-
 }
 
-/*----------------------  ESTILOS NAV-CONTAINER  > div-containe-links > a ---------*/
 .div-containe-links a {
     text-align: center;
     text-decoration: none;
     font-family: var(--font-primary);
     font-size: 1em;
     color: var(--text-color-primary);
+}
 
+/* Estilos do menu hambúrguer */
+.menu-hamburguer {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.menu-hamburguer .bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--text-color-primary);
+    border-radius: 5px;
+}
+
+/* Media queries para tornar o menu responsivo */
+@media (max-width: 620px) {
+    .div-containe-links {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--bg-color-primary);
+        z-index: 10;
+    }
+
+    .div-containe-links a {
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid var(--text-color-primary);
+    }
+
+    .menu-hamburguer {
+        display: flex;
+    }
+
+    .menu-hamburguer.active + .div-containe-links {
+        display: flex;
+    }
 }
 
 /*-------------------------- ESTILOS section-home -----------------------------*/
@@ -291,7 +330,7 @@ body {
     flex-direction: column;
 }
 .sobre-mim-descricao {
-    max-width: 1200px;
+    max-width: 1400px;
     padding: 20px;
     text-align: justify;
     overflow: auto;
@@ -299,25 +338,27 @@ body {
 .imagem-astronauta {
     float: right;
 }
-
-.content {
-    max-width: 1247px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
 #academico-conteiner {
-    width: 100%;
-    margin: auto;
-    height: 100vh;
+    min-width: 100%;
+    min-height: 100vh;
     display: flex;
     align-items: center;  
     justify-content: center;
     flex-direction: column;    
     background: #fff;
 }
+.content {
+    border: 3px solid red;
+    width: 90%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+
 span {
     font-size: 1.2em;
 }
@@ -327,8 +368,8 @@ span {
     
 }
 .container-faculdade {
-    max-width: 400px;
-    min-height: 200px;
+    width: 80%;
+    height: 200px;
     padding: 10px;
     box-shadow: 2px 3px 4px #6262627b;
     border: 1px solid #efefef;
@@ -382,6 +423,7 @@ span {
     padding: 10px;
 }
 .projetos-contents{
+    padding: 5px;
     width: 300px;
     min-height: 200px;
     display: flex;
