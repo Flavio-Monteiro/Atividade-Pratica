@@ -45,6 +45,7 @@ body {
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 /*--------------------------- ESTILOS HEADER-CONTAINER ------------------------*/
@@ -98,7 +99,7 @@ body {
 }
 
 /*-------------------------- ESTILOS section-home -----------------------------*/
-.section-home {
+#section-home {
     width: 100%;
     max-width: 1472px;
     min-height: 100vh;
@@ -478,4 +479,19 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#voltar {
+    position: fixed;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #00C86F;
+    bottom: 10px;
+    right: 10px;
+    background: var(--color-info);
+    text-decoration: none;
+    color: var(--bg-color-primary);
 }
