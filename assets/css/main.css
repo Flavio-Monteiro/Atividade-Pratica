@@ -50,93 +50,66 @@ body {
 
 /*--------------------------- ESTILOS HEADER-CONTAINER ------------------------*/
 /* Estilos gerais */
-.header-container {
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    padding: 0 20px;
-    background: var(--bg-color-primary);
-}
-
-.nav-container {
-    width: 100%;
-    max-width: 1200px;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.portifolio-txt {
-    color: #00C86F;
-}
-
-.div-containe-links {
-    height: 100%;
-    display: flex;
-    width: 50%;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.div-containe-links a {
-    text-align: center;
-    text-decoration: none;
-    font-family: var(--font-primary);
-    font-size: 1em;
-    color: var(--text-color-primary);
-}
-
-/* Estilos do menu hambúrguer */
-.menu-hamburguer {
+.menu {
     display: none;
     flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 25px;
+    background-color: var(--bg-color-primary);
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding-top: 60px;
+    transition: transform 0.3s ease;
+}
+.menu a {
+    padding: 15px 25px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.menu a:hover {
+    background-color: var(--color-info);
+}
+.hamburger {
+    display: block;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
     cursor: pointer;
 }
-
-.menu-hamburguer .bar {
-    width: 100%;
-    height: 3px;
-    background-color: var(--text-color-primary);
-    border-radius: 5px;
-}
-
-/* Media queries para tornar o menu responsivo */
-@media (max-width: 620px) {
-    .div-containe-links {
+@media (min-width: 620px) {
+    .hamburger {
         display: none;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        flex-direction: column;
-        background-color: var(--bg-color-primary);
-        z-index: 10;
     }
-
-    .div-containe-links a {
-        padding: 10px 0;
-        width: 100%;
-        text-align: center;
-        border-bottom: 1px solid var(--text-color-primary);
-    }
-
-    .menu-hamburguer {
+    .menu {
         display: flex;
+        position: static;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        padding-top: 0;
     }
-
-    .menu-hamburguer.active + .div-containe-links {
-        display: flex;
+    .menu a {
+        padding: 15px 25px;
+    }
+    .close-btn {
+        display: none;
     }
 }
-
 /*-------------------------- ESTILOS section-home -----------------------------*/
 #section-home {
     width: 100%;
@@ -348,7 +321,6 @@ body {
     background: #fff;
 }
 .content {
-    border: 3px solid red;
     width: 90%;
     max-width: 1400px;
     display: flex;
@@ -371,7 +343,7 @@ span {
     width: 80%;
     height: 200px;
     padding: 10px;
-    box-shadow: 2px 3px 4px #6262627b;
+    box-shadow: 2px 3px 4px #6262622c;
     border: 1px solid #efefef;
     margin: 1em;
     display: flex;

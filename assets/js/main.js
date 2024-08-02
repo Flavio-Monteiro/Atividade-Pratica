@@ -1,9 +1,8 @@
-    document.addEventListener('DOMContentLoaded', function() {
-        const menuHamburguer = document.querySelector('menu-hamburguer');
-        const navLinks = document.querySelector('.div-containe-links');
-
-        menuHamburguer.addEventListener('click', function() {
-            menuHamburguer.classList.toggle('active');
-            navLinks.classList.toggle('active');
-        });
-    });
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'flex';
+    }
+}
