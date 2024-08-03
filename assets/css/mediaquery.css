@@ -1,0 +1,28 @@
+@media(max-width: 640px){
+    .image-developer{
+        width: 100px;
+        height: 100px;
+    }
+    .infor-home-developer h1 {
+        font-size: 1.5em;
+    }
+    .img-astrounaut {
+        display: none;
+    }
+    .icones {
+        width: 20px;
+        height: 20px;
+    }
+    .imagem-astronauta {
+        width: 150px;
+        height: 200px;
+    }
+    .projetos-contents {
+        min-width: 70%;
+        height: 150px;
+    }
+    .imagens-projetos {
+        width: 100%;
+        height: 100%;
+    }
+}
