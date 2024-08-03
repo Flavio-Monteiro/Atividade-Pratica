@@ -1,9 +1,10 @@
+/*Reset css*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
+/*variáveis de cores e fonts*/
 :root {
     /*FONTS*/
     --font-primary: "Chakra Petch", sans-serif;
@@ -63,15 +64,18 @@ body {
     padding-top: 60px;
     transition: transform 0.3s ease;
 }
+
 .menu a {
     padding: 15px 25px;
     text-decoration: none;
     color: white;
     display: block;
 }
+
 .menu a:hover {
     background-color: var(--color-info);
 }
+
 .hamburger {
     display: block;
     cursor: pointer;
@@ -83,6 +87,7 @@ body {
     left: 0;
     z-index: 1001;
 }
+
 .close-btn {
     position: absolute;
     top: 10px;
@@ -91,10 +96,12 @@ body {
     margin-left: 50px;
     cursor: pointer;
 }
+
 @media (min-width: 620px) {
     .hamburger {
         display: none;
     }
+
     .menu {
         display: flex;
         position: static;
@@ -103,13 +110,16 @@ body {
         height: auto;
         padding-top: 0;
     }
+
     .menu a {
         padding: 15px 25px;
     }
+
     .close-btn {
         display: none;
     }
 }
+
 /*-------------------------- ESTILOS section-home -----------------------------*/
 #section-home {
     width: 100%;
@@ -302,24 +312,28 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
 .sobre-mim-descricao {
     max-width: 1400px;
     padding: 20px;
     text-align: justify;
     overflow: auto;
 }
+
 .imagem-astronauta {
     float: right;
 }
+
 #academico-conteiner {
     min-width: 100%;
     min-height: 100vh;
     display: flex;
-    align-items: center;  
+    align-items: center;
     justify-content: center;
-    flex-direction: column;    
+    flex-direction: column;
     background: #fff;
 }
+
 .content {
     width: 90%;
     max-width: 1400px;
@@ -327,18 +341,19 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    
-}
 
+}
 
 span {
     font-size: 1.2em;
 }
+
 .minha-educacao {
     color: var(--bg-color-primary);
     font-size: 1.4em;
-    
+
 }
+
 .container-faculdade {
     width: 80%;
     height: 200px;
@@ -352,12 +367,14 @@ span {
     flex-direction: column;
     background: #fefefe;
 }
+
 .container-faculdade h1 {
     font-size: 1.3em;
     font-family: var(--font-secundary);
     font-weight: normal;
     color: var(--bg-color-primary);
 }
+
 .container-faculdade p {
     font-size: 1.2em;
     font-family: var(--font-secundary);
@@ -365,13 +382,8 @@ span {
     color: var(--bg-color-primary);
 
 }
+
 #projetos {
-    /* width: 100%;
-    min-height: 100vh;
-    background-image: url("../images/background/image-desafio.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
     background: var(--bg-color-primary);
     display: flex;
     justify-content: center;
@@ -379,9 +391,15 @@ span {
     align-items: center;
     min-height: 100vh;
 }
+
 #projetos h1 {
     font-size: 2.4em;
-    color: var(--color-info);
+    color: var(--text-color-primary);
+}
+hr {
+    width: 1400px;
+    border: 1px solid #55555552;
+    margin: 10px 0;
 }
 /* Imagens projetos */
 .contents-projetos {
@@ -390,43 +408,72 @@ span {
     min-height: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* ou use justify-content: center; se preferir */
+    justify-content: center;
     box-sizing: border-box;
-    padding: 10px;
+
 }
-.projetos-contents{
- 
-    max-width: 450px;
+
+.projetos-contents {
+    margin: 10px;
+    max-width: 350px;
     min-height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1em;
     overflow: hidden;
     border: 1px solid #2BDEFD;
     border-radius: 2px;
+    position: relative;
+    
+}
+.acessar {
+    text-decoration: none;
+    position: absolute;
+    z-index: 10;
+    font-size: 2em;
+    color: var(--text-color-primary);
+    display: none;
+    transition: 0.3s ease-in;
+
+}
+.projetos-contents:hover .acessar{
+    display: block;
+    width: 350px;
+    height: 200px;
+    background: #01080eba;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projetos-contents  p{
+    color: var(--bg-color-primary);
+    position: absolute;
+    bottom: 0;
+    z-index: 21;
+    width: 350px;
+    background: var(--text-color-primary);
+    text-align: center;
+    font-weight: bold;
 }
 .projetos-contents:hover .imagens-projetos {
     transform: scale(1.2);
     filter: blur(1.4px);
     cursor: pointer;
 }
+
 .imagens-projetos {
-    height: 100%;
-    max-width: 100%;
+    height: 200px;
+    width: 350px;
     box-sizing: border-box;
     box-shadow: 3px 3px 4px #0d0d0de0;
     transition: 0.2s;
+    position: relative;
+    z-index: 1;
 
 }
-/* .imagens-projetos:hover {
-    transform: scale(1);
-    filter: blur(1.5px);
-    cursor: pointer;
-    box-shadow: none;
-} */
-/* seção contatos*/
+
 
 #contato {
     width: 100%;
@@ -436,10 +483,12 @@ span {
     flex-direction: column;
     text-align: center;
 }
+
 #contato h1 {
     font-size: 2em;
     margin: 20px 0;
 }
+
 form {
     display: flex;
     width: 60%;
@@ -468,7 +517,9 @@ label {
     font-weight: bold;
 }
 
-input, textarea, button {
+input,
+textarea,
+button {
     width: 100%;
     padding: 0.5em;
     border: 1px solid #ccc;
@@ -486,26 +537,32 @@ button {
 button:hover {
     background-color: #555;
 }
+/*rodapé*/
 footer {
     height: 80px;
-    background-color: var(--text-color-primary);
+    background-color: var(--color-success);
     color: var(--bg-color-primary);
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/*Botao voltar, fixo*/
 #voltar {
     position: fixed;
-    width: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #00C86F;
     bottom: 10px;
     right: 10px;
-    background: var(--color-info);
+    background: #1d5bcf;
     text-decoration: none;
-    color: var(--bg-color-primary);
+    color: var(--text-color-primary);
+    max-width: 90px;
+    height:50px;
+}
+#voltar:hover {
+    background: #1b4dab;
 }
