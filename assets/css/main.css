@@ -133,6 +133,7 @@ body {
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     align-content: flex-start;
 }
@@ -149,6 +150,8 @@ body {
 
 .infor-home-developer {
     text-align: center;
+    position: absolute;
+    z-index: 2;
 }
 
 .infor-home-developer>h1 {
@@ -180,11 +183,11 @@ body {
 }
 
 .img-astrounaut {
-    background-image: url('../images/background/image04-Photoroom.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top;
-    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+   width: 450px;
+   height: 550px;
     animation: moveUpDown 5s ease-in-out infinite;
     /* Animação aplicada à imagem */
 }
@@ -311,6 +314,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+#container-sobre-min h1{
+    font-size: 2em;
 }
 
 .sobre-mim-descricao {
@@ -474,7 +481,41 @@ hr {
 
 }
 
+/*animação imagem astronauta surfando*/
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
 
+	10% {
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(10deg);
+	}
+
+	80% {
+		transform: rotate(-8deg);
+	}
+
+	90% {
+		transform: rotate(8deg);
+	}
+}
+.rocket-astronaut {
+    animation: myAnim 5s ease-in-out infinite;
+}
 #contato {
     width: 100%;
     display: flex;
