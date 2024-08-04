@@ -432,34 +432,35 @@ span {
 .java-c p, .sql-p p, .html-p p, .excel-p p, .powerbi-p p{
     color: var(--bg-color-primary);
     text-align: center;
-}
-.java-c:hover p{
-    color: #E06C00;
     font-weight: bold;
 }
+/* .java-c:hover p{
+    color: #E06C00;
+    font-weight: bold;
+} */
 .java:hover{
     cursor: pointer;
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     filter: brightness(0) saturate(100%) invert(62%) sepia(81%) saturate(4292%) hue-rotate(3deg) brightness(90%) contrast(101%);
 }
 .sql:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     filter: brightness(0) saturate(100%) invert(27%) sepia(99%) saturate(6003%) hue-rotate(193deg) brightness(99%) contrast(101%);
 }
 .html:hover{
     cursor: pointer;
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     filter: brightness(0) saturate(100%) invert(56%) sepia(99%) saturate(5294%) hue-rotate(355deg) brightness(90%) contrast(92%);
 }
 .excel:hover{
     cursor: pointer;
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     filter: brightness(0) saturate(100%) invert(49%) sepia(96%) saturate(303%) hue-rotate(100deg) brightness(103%) contrast(94%);
 }
 .powerbi:hover{
     cursor: pointer;
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     filter: brightness(0) saturate(100%) invert(75%) sepia(49%) saturate(420%) hue-rotate(5deg) brightness(107%) contrast(94%);
 }
 #projetos {
