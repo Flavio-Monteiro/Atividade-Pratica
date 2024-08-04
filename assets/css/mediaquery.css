@@ -28,4 +28,20 @@
     #projetos h1{
         font-size: 1.4em;
     }
+    #voltar {
+        width: 70px;
+        height: 40px;
+        font-size: 0.7em;
+    }
+    .container-faculdade h1 {
+        font-size: 1em;
+        text-align: le7;
+    }
+    .container-faculdade p {
+        font-size: 0.8em;
+        text-align: le7;
+    }
+    .minha-educacao {
+        font-size: 1em;
+    }
 }

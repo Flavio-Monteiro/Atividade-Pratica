@@ -364,7 +364,10 @@ span {
     font-size: 1.4em;
 
 }
-
+.image-aducation {
+    width: 42px;
+    height: 42px;
+}
 .container-faculdade {
     width: 80%;
     height: 200px;
@@ -393,7 +396,72 @@ span {
     color: var(--bg-color-primary);
 
 }
-
+.interesse-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 450px;
+    background: #f6f6f6;
+    text-align: c;
+}
+.interesse-area h1{
+    color: var(--bg-color-primary);
+    text-align: center;
+    padding: 10px;
+}
+.images-contents-tec {
+    width: 54px;
+    height: 54px;
+    margin: 1em; 
+    border-radius: 10px;
+  
+}
+.images-tecnologias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    min-height: 450px;
+}
+.container-tecnologias {
+    
+}
+.java-c p, .sql-p p, .html-p p, .excel-p p, .powerbi-p p{
+    color: var(--bg-color-primary);
+    text-align: center;
+}
+.java-c:hover p{
+    color: #E06C00;
+    font-weight: bold;
+}
+.java:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: brightness(0) saturate(100%) invert(62%) sepia(81%) saturate(4292%) hue-rotate(3deg) brightness(90%) contrast(101%);
+}
+.sql:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: brightness(0) saturate(100%) invert(27%) sepia(99%) saturate(6003%) hue-rotate(193deg) brightness(99%) contrast(101%);
+}
+.html:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: brightness(0) saturate(100%) invert(56%) sepia(99%) saturate(5294%) hue-rotate(355deg) brightness(90%) contrast(92%);
+}
+.excel:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: brightness(0) saturate(100%) invert(49%) sepia(96%) saturate(303%) hue-rotate(100deg) brightness(103%) contrast(94%);
+}
+.powerbi:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: brightness(0) saturate(100%) invert(75%) sepia(49%) saturate(420%) hue-rotate(5deg) brightness(107%) contrast(94%);
+}
 #projetos {
     background: var(--bg-color-primary);
     display: flex;
