@@ -343,9 +343,11 @@ body {
     justify-content: center;
     flex-direction: column;
     background: #fff;
+    padding: 10px;
 }
 
 .content {
+    padding: 10px;
     width: 90%;
     max-width: 1400px;
     display: flex;
@@ -369,7 +371,7 @@ span {
     height: 42px;
 }
 .container-faculdade {
-    width: 80%;
+    width: 420px;
     height: 200px;
     padding: 10px;
     box-shadow: 2px 3px 4px #6262622c;
@@ -590,7 +592,8 @@ hr {
     animation: myAnim 5s ease-in-out infinite;
 }
 #contato {
-    width: 100%;
+    margin: auto;
+    max-width: 1400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -605,7 +608,9 @@ hr {
 
 form {
     display: flex;
-    width: 60%;
+    width: 40%;
+    max-width: 600px;
+    height: 700px;
     flex-direction: column;
     text-align: left;
 }
@@ -659,6 +664,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 /*Botao voltar, fixo*/
 #voltar {

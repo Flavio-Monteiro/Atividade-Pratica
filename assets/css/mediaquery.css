@@ -44,4 +44,7 @@
     .minha-educacao {
         font-size: 1em;
     }
+    form{
+        width: 80%;
+    }
 }
